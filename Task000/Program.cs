@@ -25,19 +25,21 @@ namespace Task000
 
             switch (direction)
             {
+                case "up":
+                    y--;
+                    break;
                 case "down":
-                    y += 1;
+                    y++;
                     break;
                 case "left":
-                    x -= 1;
+                    x--;
                     break;
                 case "right":
-                    x += 1;
-                    break;
-                case "up":
-                    y -= 1;
+                    x++;
                     break;
             }
+            
+           
 
             result = $"x: {x}, y: {y}, direction: {direction}";
             Console.WriteLine(result);
